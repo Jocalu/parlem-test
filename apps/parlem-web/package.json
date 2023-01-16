@@ -1,5 +1,5 @@
 {
-	"name": "parlem-web",
+  "name": "parlem-web",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.0.0"
+    "nuxt": "^3.0.0",
+    "sass": "^1.57.1"
   }
 }
