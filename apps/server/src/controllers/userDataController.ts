@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-const userData = {
+export const userData = {
 	_id: 555555,
 	docType: 'nif',
 	docNum: '11223344E',

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-const userProducts = [
+export const userProducts = [
 	{
 		_id: 1111111,
 		productName: 'FIBRA 1000 ADAMO',
