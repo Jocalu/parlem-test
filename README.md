@@ -11,7 +11,6 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 - `parlem-web`: a [Vue.js](https://vuejs.org/) app
 - `server`: a [Express.js](https://expressjs.com/) app
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json` used throughout the monorepo
 
 ### Utilities
 
@@ -47,3 +46,22 @@ To test all apps and packages, run the following command:
 cd parlem-test
 pnpm run test
 ```
+
+### Lint
+
+To lint all apps and packages, run the following command:
+
+```
+cd parlem-test
+pnpm run lint
+```
+
+### Format
+
+To format all apps and packages, run the following command:
+
+```
+cd parlem-test
+pnpm run format
+```
+
