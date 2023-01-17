@@ -1,14 +1,18 @@
 import { UserProduct } from '~~/@types/UserProducts'
 
+import { API_HOST } from '~~/constants/apiHost'
+
 const factory = () => {
 	const getUserProducts = async (
 		userId: string
 	): Promise<UserProduct[] | undefined> => {
 		try {
-			const response = await fetch(
-				`http://localhost:8000/api/products/${userId}`
-			)
+			const response = await fetch(`${API_HOST}/api/products/${userId}`)
 			const userProducts = await response.json()
+
+			if (response.status === 500) {
+				throw new Error('Server error')
+			}
 
 			return userProducts
 		} catch (error) {

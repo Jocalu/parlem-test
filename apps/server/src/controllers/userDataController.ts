@@ -20,7 +20,13 @@ export const userData = {
 const userDataController = () => {
 	const getUserByCustomerId = (req: Request, res: Response) => {
 		try {
-			return res.json(userData)
+			const { customerId } = req.params
+
+			if (customerId === userData.customerId) {
+				return res.json(userData)
+			}
+
+			throw new Error('User not found')
 		} catch (error) {
 			res.status(500).send(error)
 		}

@@ -8,7 +8,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
-- `parlem-web`: a [Vue.js](https://vuejs.org/) app
+- `parlem-web`: a [Nuxt.js](https://nuxt.com/) app
 - `server`: a [Express.js](https://expressjs.com/) app
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-prettier`)
 

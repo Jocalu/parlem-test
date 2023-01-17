@@ -22,7 +22,13 @@ export const userProducts = [
 const userProductsController = () => {
 	const getUserProductsByCustomerId = (req: Request, res: Response) => {
 		try {
-			return res.json(userProducts)
+			const { customerId } = req.params
+
+			if (userProducts.find((product) => product.customerId === customerId)) {
+				return res.json(userProducts)
+			}
+
+			throw new Error('Products not found')
 		} catch (error) {
 			res.status(500).send(error)
 		}
