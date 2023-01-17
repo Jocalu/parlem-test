@@ -1,8 +1,7 @@
 <template>
   <main class="main">
-    <header-default>
-      <h1>Hola mundo</h1>
-    </header-default>
+    <header-default />
+    <slot />
   </main>
 </template>
 
