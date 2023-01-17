@@ -1,5 +1,8 @@
 <template>
-  <section class="container-responsive">
+  <section
+    class="container-responsive"
+    v-if="userDataState.kind === 'LoadedUserDataState'"
+  >
     <pages-navigation class="mt-4" />
 
     <h2 class="mt-6" v-text="userAreaDataTitle" />
@@ -13,12 +16,24 @@
           <text-labeled
             class="user-area__data--full-width"
             :label="userAreaDataDocumentNumber"
-            text="Parlem"
+            :text="userDataState.userData.docNum"
           />
-          <text-labeled :label="userAreaDataName" text="Parlem" />
-          <text-labeled :label="userAreaDataSurname" text="Parlem" />
-          <text-labeled :label="userAreaDataPhone" text="Parlem" />
-          <text-labeled :label="userAreaDataEmail" text="Parlem" />
+          <text-labeled
+            :label="userAreaDataName"
+            :text="userDataState.userData.name"
+          />
+          <text-labeled
+            :label="userAreaDataSurname"
+            :text="userDataState.userData.surname"
+          />
+          <text-labeled
+            :label="userAreaDataPhone"
+            :text="userDataState.userData.phone"
+          />
+          <text-labeled
+            :label="userAreaDataEmail"
+            :text="userDataState.userData.email"
+          />
         </div>
       </div>
 
@@ -29,10 +44,20 @@
           <text-labeled
             class="user-area__data--full-width"
             :label="userAreaDataAddress"
-            text="Parlem"
+            :text="userDataState.userData.address.street"
           />
-          <text-labeled :label="userAreaDataPostalCode" text="Parlem" />
-          <text-labeled :label="userAreaDataCity" text="Parlem" />
+          <text-labeled
+            :label="userAreaDataZipCode"
+            :text="userDataState.userData.address.zipCode"
+          />
+          <text-labeled
+            :label="userAreaDataProvince"
+            :text="userDataState.userData.address.province"
+          />
+          <text-labeled
+            :label="userAreaDataCity"
+            :text="userDataState.userData.address.city"
+          />
         </div>
       </div>
     </div>
@@ -40,19 +65,32 @@
 </template>
 
 <script lang="ts" setup>
+import { useUserData } from "~~/infrastructure/presentation/useUserData";
+
 import {
-  userAreaDataTitle,
-  userAreaDataName,
-  userAreaDataSurname,
-  userAreaDataText,
-  userAreaDataContact,
   userAreaDataAddress,
+  userAreaDataCity,
+  userAreaDataContact,
   userAreaDataDocumentNumber,
   userAreaDataEmail,
+  userAreaDataName,
   userAreaDataPhone,
-  userAreaDataPostalCode,
-  userAreaDataCity,
+  userAreaDataProvince,
+  userAreaDataSurname,
+  userAreaDataText,
+  userAreaDataTitle,
+  userAreaDataZipCode,
 } from "../../locales/ca.json";
+
+const { getUserData, userDataState } = useUserData();
+
+const fakeUserId = "11111";
+
+onBeforeMount(() => {
+  if (userDataState.value.kind !== "LoadedUserDataState") {
+    getUserData(fakeUserId);
+  }
+});
 </script>
 
 <style lang="scss" src="./UserArea.scss"></style>
