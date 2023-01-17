@@ -1,15 +1,6 @@
 <template>
   <section class="container-responsive">
-    <nav>
-      <ul>
-        <nuxt-link :to="ROUTES.USER_AREA">
-          <li class="user-area__nav-item" v-text="data" />
-        </nuxt-link>
-        <nuxt-link :to="ROUTES.USER_AREA_PRODUCTS">
-          <li class="user-area__nav-item" v-text="products" />
-        </nuxt-link>
-      </ul>
-    </nav>
+    <pages-navigation class="mt-4" />
 
     <h2 class="mt-6" v-text="userAreaDataTitle" />
     <p class="mt-2" v-text="userAreaDataText" />
@@ -49,7 +40,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ROUTES } from "../../routes/routes";
 import {
   userAreaDataTitle,
   userAreaDataName,
@@ -62,8 +52,6 @@ import {
   userAreaDataPhone,
   userAreaDataPostalCode,
   userAreaDataCity,
-  data,
-  products,
 } from "../../locales/ca.json";
 </script>
 
