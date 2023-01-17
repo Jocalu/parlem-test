@@ -16,5 +16,7 @@
   "adsl":"Fibra adsl",
   "mobileLines":"Línies mòbils",
   "data": "Dades",
-  "products": "Productes"
+  "products": "Productes",
+  "userAreaProductsSoldAtText": "Contractat el",
+  "userAreaProductsNameText": "Nom del producte:"
 }
