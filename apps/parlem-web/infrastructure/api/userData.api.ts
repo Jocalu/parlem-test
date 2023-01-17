@@ -1,16 +1,16 @@
-import { UserData } from "~~/@types/userData";
+import { UserData } from '~~/@types/userData'
 
 const factory = () => {
-  const getUserData = async (userId: string): Promise<UserData> => {
-    const response = await fetch(`http://localhost:8000/api/user/${userId}`);
-    const userData = await response.json();
+	const getUserData = async (userId: string): Promise<UserData> => {
+		const response = await fetch(`http://localhost:8000/api/user/${userId}`)
+		const userData = await response.json()
 
-    return userData;
-  };
+		return userData
+	}
 
-  return {
-    getUserData,
-  };
-};
+	return {
+		getUserData,
+	}
+}
 
-export default factory();
+export default factory()
