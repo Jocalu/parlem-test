@@ -1,11 +1,10 @@
 <template>
   <nav class="pages-navigation">
-    <ul
-      v-for="link in links"
-      :class="['pages-navigation__item-wrapper', activeClass(link.to)]"
-    >
-      <nuxt-link :to="link.to" class="pages-navigation__item">
-        <li v-text="link.text" />
+    <ul class="pages-navigation__wrapper" v-for="link in links">
+      <nuxt-link :to="link.to" class="pages-navigation__item-wrapper">
+        <div :class="['pages-navigation__item', activeClass(link.to)]">
+          <li v-text="link.text" />
+        </div>
       </nuxt-link>
     </ul>
   </nav>
@@ -38,7 +37,7 @@ withDefaults(defineProps<PageNavigationProps>(), {
 });
 
 const activeClass = (link: string) => {
-  return link === route.path && "pages-navigation__item-wrapper--active";
+  return link === route.path && "pages-navigation__item--active";
 };
 </script>
 
