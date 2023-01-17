@@ -28,7 +28,8 @@ const userDataController = () => {
 
 			throw new Error('User not found')
 		} catch (error) {
-			res.status(500).send(error)
+			res.status(500)
+			res.send(error)
 		}
 	}
 
