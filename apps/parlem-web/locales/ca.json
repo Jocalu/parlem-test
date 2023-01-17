@@ -3,6 +3,8 @@
   "data": "Dades",
   "mobileLines":"Línia mòbil",
   "otherProducts":"Altres productes",
+  "pageNotFound":"Pàgina no trobada",
+  "pageNotFoundText":"La pàgina que estàs buscant no existeix, dirigix-te a l'àrea d'usuari",
   "products": "Productes",
   "returnText": "Tornar",
   "userAreaButtonText":"Àrea d'usuari",
