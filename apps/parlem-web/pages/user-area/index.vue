@@ -80,7 +80,7 @@ import {
   userAreaDataText,
   userAreaDataTitle,
   userAreaDataZipCode,
-} from "../../locales/ca.json";
+} from "~~/locales/ca.json";
 
 const { getUserData, userDataState } = useUserData();
 

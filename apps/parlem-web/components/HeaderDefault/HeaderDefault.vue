@@ -19,8 +19,8 @@
 <script lang="ts" setup>
 import { ComputedRef } from "vue";
 
-import { ROUTES } from "../../routes/routes";
-import { userAreaButtonText, returnText } from "../../locales/ca.json";
+import { ROUTES } from "~~/routes/routes";
+import { userAreaButtonText, returnText } from "~~/locales/ca.json";
 
 const route = useRoute();
 

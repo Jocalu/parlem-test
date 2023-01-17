@@ -35,5 +35,5 @@ import {
   adsl,
   userAreaProductsSoldAtText,
   userAreaProductsNameText,
-} from "../../../locales/ca.json";
+} from "~~/locales/ca.json";
 </script>

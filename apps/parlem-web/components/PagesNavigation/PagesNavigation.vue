@@ -11,8 +11,8 @@
 </template>
 
 <script lang="ts" setup>
-import { ROUTES } from "../../routes/routes";
-import { data, products } from "../../locales/ca.json";
+import { ROUTES } from "~~/routes/routes";
+import { data, products } from "~~/locales/ca.json";
 
 const route = useRoute();
 
