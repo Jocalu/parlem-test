@@ -1,3 +1,20 @@
 {
-  "userAreaButtonText":"Àrea d'usuari"
+  "userAreaButtonText":"Àrea d'usuari",
+  "userAreaDataTitle":"Les meves dades",
+  "userAreaDataText":"En aquesta secció podràs modificar les teves dades personals",
+  "userAreaDataDocumentNumber":"Núm. de document",
+  "userAreaDataName":"Nom",
+  "userAreaDataSurname":"Cognoms",
+  "userAreaDataEmail":"Correu electrònic",
+  "userAreaDataPhone":"Telèfon",
+  "userAreaDataContact":"Dades de contacte",
+  "userAreaDataAddress":"Adreça",
+  "userAreaDataPostalCode":"Codi postal",
+  "userAreaDataCity":"Població",
+  "userAreaProductsTitle":"Els meus productes",
+  "userAreaProductsText":"En aquesta secció podràs veure els productes que tens contractats",
+  "adsl":"Fibra adsl",
+  "mobileLines":"Línies mòbils",
+  "data": "Dades",
+  "products": "Productes"
 }
