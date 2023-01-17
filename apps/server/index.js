@@ -43,7 +43,7 @@ app.get('/api/products/:customerId', (req, res) => {
         },
         {
             _id: 2222222,
-            productName: 'FIBRA 1000 ADAMO',
+            productName: 'Línea Móvil 1',
             productTypeName: 'lm',
             numeracioTerminal: 32768376,
             soldAt: '2019-01-19 14:26:17',

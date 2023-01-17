@@ -8,7 +8,7 @@
 <script lang="ts" setup>
 defineProps<{
 	label: string
-	text: string
+	text: Date | string
 }>()
 </script>
 

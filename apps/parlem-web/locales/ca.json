@@ -1,7 +1,8 @@
 {
   "adsl":"Fibra adsl",
   "data": "Dades",
-  "mobileLines":"Línies mòbils",
+  "mobileLines":"Línia mòbil",
+  "otherProducts":"Altres productes",
   "products": "Productes",
   "returnText": "Tornar",
   "userAreaButtonText":"Àrea d'usuari",
