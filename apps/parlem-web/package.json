@@ -8,7 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "test": "vitest"
+    "test": "vitest --run"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
