@@ -16,6 +16,12 @@ export interface LoadedUserProductsState {
 	readonly userProducts: UserProduct[]
 }
 
+export interface ErrorUserProductsState {
+	readonly kind: 'ErrorUserProductsState'
+	readonly error: string
+}
+
 export type UserProductsState =
 	| LoadingUserProductsState
 	| LoadedUserProductsState
+	| ErrorUserProductsState

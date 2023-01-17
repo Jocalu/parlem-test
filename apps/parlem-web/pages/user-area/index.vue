@@ -62,6 +62,12 @@
 			</div>
 		</div>
 	</section>
+	<section
+		class="container-responsive"
+		v-if="userDataState.kind === 'ErrorUserDataState'"
+	>
+		<p class="mt-2" v-text="userDataState.error" />
+	</section>
 </template>
 
 <script lang="ts" setup>

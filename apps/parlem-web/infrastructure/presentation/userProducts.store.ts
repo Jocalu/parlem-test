@@ -1,7 +1,9 @@
 import type { Ref } from 'vue'
 import { defineStore } from 'pinia'
 
-import userProductsApi from '../api/userProducts.api'
+import userProductsApi from '~~/infrastructure/api/userProducts.api'
+
+import { errorMessage } from '~~/locales/ca.json'
 
 import type { UserProductsState } from '~~/@types/userProducts'
 
@@ -13,7 +15,18 @@ export const userProductsStore = defineStore('userProductsStore', () => {
 	const getUserProducts = async (userId: string) => {
 		const userProducts = await userProductsApi.getUserProducts(userId)
 
-		userProductsState.value = { kind: 'LoadedUserProductsState', userProducts }
+		if (userProducts) {
+			userProductsState.value = {
+				kind: 'LoadedUserProductsState',
+				userProducts,
+			}
+			return
+		}
+
+		userProductsState.value = {
+			kind: 'ErrorUserProductsState',
+			error: errorMessage,
+		}
 	}
 
 	return {

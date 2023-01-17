@@ -28,6 +28,12 @@
 			</div>
 		</div>
 	</section>
+	<section
+		class="container-responsive"
+		v-if="userProductsState.kind === 'ErrorUserProductsState'"
+	>
+		<p class="mt-2" v-text="userProductsState.error" />
+	</section>
 </template>
 
 <script lang="ts" setup>

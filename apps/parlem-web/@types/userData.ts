@@ -26,4 +26,12 @@ export interface LoadedUserDataState {
 	readonly userData: UserData
 }
 
-export type UserDataState = LoadingUserDataState | LoadedUserDataState
+export interface ErrorUserDataState {
+	readonly kind: 'ErrorUserDataState'
+	readonly error: string
+}
+
+export type UserDataState =
+	| LoadingUserDataState
+	| LoadedUserDataState
+	| ErrorUserDataState
