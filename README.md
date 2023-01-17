@@ -13,7 +13,6 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json` used throughout the monorepo
 
-
 ### Utilities
 
 This turborepo has some additional tools already setup for you:

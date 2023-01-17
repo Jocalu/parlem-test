@@ -24,6 +24,7 @@ type PageNavigationProps = {
 };
 
 withDefaults(defineProps<PageNavigationProps>(), {
+  // @ts-ignore
   links: [
     {
       text: data,
