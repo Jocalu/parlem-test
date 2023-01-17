@@ -2,6 +2,10 @@
 
 Technical test for the selection process with Parlem Telecom.
 
+The app is connected to sonar for code quality validation
+
+[SonarCloud validation](https://sonarcloud.io/project/overview?id=Jocalu_parlem-test)
+
 ## What's inside?
 
 This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
