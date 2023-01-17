@@ -7,14 +7,20 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "vitest"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/vue": "^6.6.1",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "jsdom": "^21.0.0",
     "nuxt": "^3.0.0",
     "sass": "^1.57.1",
+    "vitest": "^0.27.2",
     "vue-eslint-parser": "^9.1.0"
   },
   "dependencies": {
