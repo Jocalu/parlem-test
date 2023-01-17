@@ -65,3 +65,13 @@ cd parlem-test
 pnpm run format
 ```
 
+### Views
+
+The project has the following views:
+
+![Not found Mobile](apps/parlem-web/public/not_found_mobile.png)
+![Not found Desktop](apps/parlem-web/public/not_found_desktop.png)
+![User Area Mobile](apps/parlem-web/public/user_area_mobile.png)
+![User Area Desktop](apps/parlem-web/public/user_area_desktop.png)
+![User Products Mobile](apps/parlem-web/public/user_products_mobile.png)
+![User Products Desktop](apps/parlem-web/public/user_products_desktop.png)
