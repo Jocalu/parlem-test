@@ -2,10 +2,10 @@
   <section class="container-responsive">
     <nav>
       <ul>
-        <nuxt-link to="/user-area">
+        <nuxt-link :to="ROUTES.USER_AREA">
           <li class="user-area__nav-item" v-text="data" />
         </nuxt-link>
-        <nuxt-link to="/user-area/products">
+        <nuxt-link :to="ROUTES.USER_AREA_PRODUCTS">
           <li class="user-area__nav-item" v-text="products" />
         </nuxt-link>
       </ul>
@@ -49,6 +49,7 @@
 </template>
 
 <script lang="ts" setup>
+import { ROUTES } from "../../routes/routes";
 import {
   userAreaDataTitle,
   userAreaDataName,
