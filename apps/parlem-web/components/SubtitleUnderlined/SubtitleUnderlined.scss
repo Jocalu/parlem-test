@@ -1,0 +1,11 @@
+.subtitle-underlined {
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &__line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary);
+  }
+}
