@@ -36,8 +36,8 @@ withDefaults(defineProps<PageNavigationProps>(), {
   ],
 });
 
-const activeClass = (link: string) => {
-  return link === route.path && "pages-navigation__item--active";
+const activeClass = (link: string): string => {
+  return link === route.path ? "pages-navigation__item--active" : "";
 };
 </script>
 
