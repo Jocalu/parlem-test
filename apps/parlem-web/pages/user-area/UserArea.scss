@@ -1,0 +1,23 @@
+.user-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+
+  @media only screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
+  &__data-wrapper {
+    width: 100%;
+  }
+
+  &__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &--full-column {
+      grid-column: 1 / 3;
+    }
+  }
+}
