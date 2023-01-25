@@ -1,6 +1,4 @@
-# Parlem test
-
-Technical test for the selection process with Parlem Telecom.
+# Turbo repo example
 
 The app is connected to sonar for code quality validation
 
