@@ -1,4 +1,6 @@
-# Turbo repo example
+# Technical test
+
+Made with turborepo, nuxt3, typescript
 
 The app is connected to sonar for code quality validation
 
@@ -27,7 +29,7 @@ This turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd parlem-test
+cd technical-test-with-turborepo
 pnpm run build
 ```
 
@@ -36,7 +38,7 @@ pnpm run build
 To develop all apps and packages, run the following command:
 
 ```
-cd parlem-test
+cd technical-test-with-turborepo
 pnpm run dev
 ```
 
@@ -45,7 +47,7 @@ pnpm run dev
 To test all apps and packages, run the following command:
 
 ```
-cd parlem-test
+cd technical-test-with-turborepo
 pnpm run test
 ```
 
@@ -54,7 +56,7 @@ pnpm run test
 To lint all apps and packages, run the following command:
 
 ```
-cd parlem-test
+cd technical-test-with-turborepo
 pnpm run lint
 ```
 
@@ -63,7 +65,7 @@ pnpm run lint
 To format all apps and packages, run the following command:
 
 ```
-cd parlem-test
+cd technical-test-with-turborepo
 pnpm run format
 ```
 
